@@ -25,14 +25,17 @@ sudo apt install mediainfo
 ## Usage
 
 **Download a single video:**
+
 py script.py <URL>
 
 
 **Download multiple videos or playlists from a file:**
+
 py script.py links.txt
 
 Format of `links.txt`: one URL per line.
 
 
 **Check downloaded file:**
+
 mediainfo "filename.mkv"
