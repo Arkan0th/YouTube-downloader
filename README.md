@@ -39,3 +39,8 @@ Format of `links.txt`: one URL per line.
 **Check downloaded file:**
 
 mediainfo "filename.mkv"
+
+
+
+**NOTE:**
+If file download fails, reinstall yt-dlp library!
