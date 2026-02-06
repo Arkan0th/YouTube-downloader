@@ -44,3 +44,4 @@ mediainfo "filename.mkv"
 
 **NOTE:**
 If file download fails, reinstall yt-dlp library!
+pipx uninstall yt-dlp && pipx install yt-dlp && pipx ensurepath
