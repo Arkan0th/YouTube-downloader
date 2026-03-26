@@ -2,13 +2,13 @@ import subprocess
 import sys
 import pathlib
 
-DOWNLOAD_DIR = pathlib.Path(__file__).parent
+DOWNLOAD_DIR = pathlib.Path(__file__).parent.resolve()
 
 def download(target):
-    DOWNLOAD_DIR.mkdir(parents=True, exist_ok=True)
-
     cmd = [
         "yt-dlp",
+
+        "--yes-playlist",
         "-f", "bestvideo+bestaudio/best",
         "--merge-output-format", "mkv",
 
@@ -16,8 +16,11 @@ def download(target):
         "--embed-thumbnail",
         "--embed-chapters",
 
+        # Force output directly into this folder
         "-P", str(DOWNLOAD_DIR),
-        "-o", "%(title)s.%(ext)s",
+
+        # IMPORTANT: no slashes → no directories created
+        "-o", "%(playlist_index)03d - %(title)s.%(ext)s",
 
         target
     ]
@@ -40,4 +43,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
