@@ -1,6 +1,6 @@
 # YouTube Downloader
 
-Minimal Python script using the `yt-dlp` library for downloading YouTube videos with the **highest video + audio quality**, all in a single MKV file!
+Minimal Python script using the `yt-dlp` library for downloading YouTube videos with the highest video + audio quality, all in a single MKV file!
 
 ---
 
