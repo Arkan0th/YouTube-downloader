@@ -33,10 +33,9 @@ Minimal Python script using the `yt-dlp` library for downloading YouTube videos 
 <br>
 
 **Download multiple videos or playlists:**
+
 `py script.py <URL1> <URL2> <URLn>`
-
 or
-
 `py script.py file`
 
 Format of `file`: one video URL per line.
