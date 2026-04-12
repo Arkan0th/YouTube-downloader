@@ -20,7 +20,7 @@ def download(target):
         "-P", str(DOWNLOAD_DIR),
 
         # IMPORTANT: no slashes → no directories created
-        "-o", "%(playlist_index)03d - %(title)s.%(ext)s",
+        "-o", "%(playlist_index|)03d%(playlist_index& - |)s%(title)s.%(ext)s",
 
         target
     ]
